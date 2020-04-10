@@ -5,7 +5,7 @@
 	<form-bean name="userForm" type="com.spe.forms.UserForm"></form-bean>
 </form-beans>
 <action-mappings>
-	<action path="/login" name="userForm" type="com.spe.actions.LoginAction">
+	<action path="/login" name="userForm" scope="request" type="com.spe.actions.LoginAction">
 		<forward name="ok" path="/WEB-INF/welcome.jsp"/>
 		<forward name="err" path="/WEB-INF/error.jsp"/>
 	</action>
